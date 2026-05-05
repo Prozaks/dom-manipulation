@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styles Preview</title>
+</head>
+<body style="background-color: brown; margin: 0; font-family: Arial;">
+    <nav style="
+        position: sticky;
+        top: 0;
+        background-color: #1f1f1f;
+        color: white;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    ">
+        <h2 style="margin: 0;">TextStyler</h2>
+
+        <div style="display: flex; gap: 20px;">
+            <a href="#" style="color: white; text-decoration: none;">Home</a>
+            <a href="#" style="color: white; text-decoration: none;">Features</a>
+            <a href="#" style="color: white; text-decoration: none;">About</a>
+        </div>
+    </nav>
+
+       <div style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: calc(100vh - 70px);
+        gap: 20px;
+    ">
+        
+        <h1 style="color: white;">Magnificent InputText Website</h1>
+
+        <input 
+            type="text" 
+            id="text" 
+            placeholder="Enter your text here" 
+            style="height: 80px; width: 500px; padding: 10px; font-size: 16px;"
+        >
+
+        <div style="background: white; padding: 20px; border-radius: 10px; width: 500px;">
+            <p><strong>Bold:</strong> <span id="bold"></span></p>
+            <p><strong>Italic:</strong> <span id="italic" style="font-style: italic;"></span></p>
+            <p><strong>Monospace:</strong> <span id="mono" style="font-family: monospace;"></span></p>
+            <p><strong>Uppercase:</strong> <span id="upper"></span></p>
+        </div>
+
+    </div>
+
+    <script src="dom.js", defer></script>
+</body>
+</html>
